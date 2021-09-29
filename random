@@ -1,0 +1,30 @@
+package gaming;
+
+import java.util.Scanner;
+import java.util.Random;
+public class Gaming {
+    private static String abc;
+
+
+    public static void main(String[] args) {
+        //variaveis
+        String v;
+       Scanner entrada = new Scanner(System.in);
+       Random number = new Random();
+        //entrada de dados
+        int abc = number.nextInt(10);
+        System.out.print("\nO numero é "+abc+" é impar ou par: ");
+        v = entrada.nextLine();
+        if("par".equals(v)){
+            if(abc % 2 == 0){
+                System.out.println("\nSim o numero é par");
+            }
+        }else if("impar".equals(v)){
+           if(abc % 2 > 0){
+               System.out.print("\nSim o numero é impar");
+           }
+        }
+       
+    }
+    
+}
